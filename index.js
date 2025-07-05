@@ -17,6 +17,24 @@ function deleteChildElements(parent) {
     }
 }
 
+///// CUSTOM FEATURE SECTION
+const gameTemperature = (game) => {
+    // function will account for backers, pledged, and goal
+    const avgFundsPerBacker = (game.pledged / game.backers) * 10
+    const remainingGoal = game.goal - game.pledged
+    const tempurature = remainingGoal / avgFundsPerBacker
+
+    if (tempurature <= 32) return 32 // freezing (as minimum to prevent people from not donating)
+    else if (tempurature >= 212) return 212 // boiling
+    else return tempurature.toFixed()
+}
+
+const gameTemperatureColor = (temp) => {
+    if (temp >= 100) return "red"
+    else if (temp > 32) return "orange"
+    else return "blue"
+}
+
 /*****************************************************************************
  * Challenge 3: Add data about each game as a card to the games-container
  * Skills used: DOM manipulation, for loops, template literals, functions
@@ -47,6 +65,7 @@ function addGamesToPage(games) {
         <p>Backers: ${game.backers}</p>
         <p>Pledged: ${game.pledged}</p>
         <p>Goal: ${game.goal}</p>
+        <p style="color: ${gameTemperatureColor(gameTemperature(game))}";>Temperature: ${gameTemperature(game)}ºF</p>
         `
 
         // TIP: if your images are not displaying, make sure there is space
