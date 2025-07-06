@@ -24,7 +24,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented features:
 
-<img src='/web102_prework/TropicSupportWeb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Tropic Support Demo](assets/TropicSupportWeb.gif)
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with LICEcap  
