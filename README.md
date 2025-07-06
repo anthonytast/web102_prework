@@ -1,10 +1,10 @@
-# WEB102 Prework - *Sea Monster*
+# WEB102 Prework - *Tropic Support*
 
 Submitted by: Anthony Tast
 
-**Sea Monster** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Tropic Support** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **5** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -17,16 +17,17 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [✓] Added Tropic Support colors and branding
+* [✓] Added *temperature* feature to highlight which games need the most help (based on the remaining goal and the average donation amount per backer)
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/web102_prework/TropicSupportWeb.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with LICEcap  
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -34,11 +35,14 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+I had a lot of fun building this app. My main challenge came with adding a custom feature to the site.
+
+* I wanted to add something that would encourage users to donate to struggling games. I found the tropical branding to be a great addition because it added some theming and lively colors to the user interface, while encouraging the user to donate to games that require the most funding.
+* Once I decided to go with the tropical theme, I wasn't sure how to determine the *temperature*. The feature is somewhat abstract, simply meant to indicate which games are struggling the most. My formula was successful because it indicates how many more donations are required based on the average donation amount per backer. I set a boiling temperature as the maximum to keep the temperature within reason. I also set freezing as a minimum so that users don't feel discouraged from donating to games with proper funding.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Anthony Tast
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
